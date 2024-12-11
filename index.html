@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete dos Games</title>
+    <link rel="stylesheet" href="skinlanchas.css">
+</head>
+<body>
+    <header>
+        <h1>Lanchonete dos Games</h1>
+        <p>A única lanchonete onde pode experienciar seus jogos favoritos pelo paladar.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="menu">
+            <h2>Cardápio dos Games</h2>
+            <div class="menu-item" data-price="00">
+                <img src="https://t.ctcdn.com.br/RSx-1QD46g_9WMWk0h4cGeGLAyk=/167x128:1720x1002/1024x576/smart/i554020.jpeg" alt="Lanche 1">
+                <h3>Fortpizza</h3>
+                <p>Pizza sabor Fortnite Battle Royale, experimente o sabor da batalha!</p>
+                <p>Preço: R$00,00</p>
+                <button onclick="addToOrder('Fortpizza', 00)">Adicionar ao carrinho</button>
+            </div>
+            <div class="menu-item" data-price="15">
+                <img src="https://tse2.mm.bing.net/th?id=OIG1.uLBAlfWmGCPbvyDr1.F_&pid=ImgGn" alt="Lanche 2">
+                <h3>Burguerborne</h3>
+                <p>Sacie sua sede pela caçada com o molho especial de sangue pálido.</p>
+                <p>Preço: R$15,00</p>
+                <button onclick="addToOrder('Burguerborne', 15)">adcionar ao carrinho</button>
+            </div>
+            <div class="menu-item" data-price="12">
+                <img src="https://lh3.googleusercontent.com/gg/AJxt1KPA0oW9C2XsuXAYuFWN5BxiuJDVENGiBP5CqR5lTsWBtPaVyWopgOpJ2QnG_aLEe_1rmavRfdXV2oWt51cct_Frq5gMYoA4imwrGH-5mG3HAu0BThlEBkTABzfA9ZOShXU5qqNtt5GhgnBWjB_lcvTuuZ21Vr_unsZcILSPXDRFTgMuVHo" alt="Lanche 3">
+                <h3>Dark Sucouls</h3>
+                <p>Suco feito das almas negras dos Hérois da era da chama</p>
+                <p>Preço: R$12,00</p>
+                <button onclick="addToOrder('Frasco Estus', 12)">adicionar ao carrinho</button>
+            </div>
+            <div class="menu-item" data-price="11">
+                <img src="https://tse2.mm.bing.net/th?id=OIG4.Y9ieitsMaujGVQDiRxr8&pid=ImgGn" alt="Lanche 4">
+                <h3>Hollow sprite</h3>
+                <p>o refrigerante connsiderado uma obra prima pela majoritariedade dos consumidores</p>
+                <p>Preço: R$11,00</p>
+                <button onclick="addToOrder('Hollow sprite', 11)">adicionar ao carrinho</button>
+            </div>
+            <div class="menu-item" data-price="100000">
+                <img src="https://tse1.mm.bing.net/th?id=OIG2.f2jWdoRBzMZofOukaY46&pid=ImgGn" alt="Lanche 5">
+                <h3>GTA 6 burguer</h3>
+                <p>a sequencia direta do GTA 5 burguer, ainda em desenvolvimento</p>
+                <p>Preço: R$100000,00</p>
+                <button onclick="msgdes('GTA 6 burguer', 100000)">adicionar ao carrinho</button>
+            </div>
+            <div class="menu-item" data-price="5">
+                <img src="https://tse1.mm.bing.net/th?id=OIG4.NaplhC03XA2BkSgcJmIE&pid=ImgGn" alt="Lanche 6">
+                <h3>Silent Milks</h3>
+                <p>"Em meu sonho inquieto, vejo aquele milkshake. Silent Milks..."</p>
+                <p>Preço: R$5,00</p>
+                <button onclick="addToOrder('SIlent Milks', 5)">adicionar ao carrinho</button>
+            </div>
+            <div class="menu-item" data-price="2">
+                <img src="https://tse4.mm.bing.net/th?id=OIG2.Tf6dx5yo7ZQKG_79UcPT&pid=ImgGn" alt="Lanche 7">
+                <h3>Alan Shake</h3>
+                <p>"Um milshake não é simplesmente uma bebida açucarada que sacia sua sede, ela 
+                    é uma entidade, viva, se aproveita da sua vontade de ingerir algo não tão liquido, mas não tão sólido, um ingrediente errado
+                    e o sabor morre, o milkshake morre" -Alan Wake
+                </p>
+                <p>Preço: R$2,00</p>
+                <button onclick="addToOrder('Alan Shake', 2)">adicionar ao carrinho</button>
+            </div>
+            <div class="menu-item" data-price="100">
+                <img src="https://tse2.mm.bing.net/th?id=OIG2.Eu5Canoofnlkzy9D2Bnt&pid=ImgGn" alt="Lanche 8">
+                <h3>Mapo Sifu</h3>
+                <p> um prato chinês feito pelo chefe que busca uma vingança incessável, onde o preço é sua idade </p>
+                <p>Preço: 3 anos</p>
+                <button onclick="addToOrder('Mapo Sifu', 100)">adicionar ao carrinho</button>
+            </div>
+            <div class="menu-item" data-price="50">
+                <img src="https://tse1.mm.bing.net/th?id=OIG1.ce.RIDqPN7tN9qQosaLi&pid=ImgGn" alt="Lanche 9">
+                <h3>Sorvetaria</h3>
+                <p> um sorvete que busca ser a réplica do Sorvecraft em duas dimensões, mas falha miseravelmente </p>
+                <p>Preço: R$50,00</p>
+                <button onclick="addToOrder('Sorvetaria', 50)">adicionar ao carrinho</button>
+            </div>
+            <div class="menu-item" data-price="51">
+                <img src="https://tse3.mm.bing.net/th?id=OIG1.9ZmowWlaR51pEflOwIk7&pid=ImgGn" alt="Lanche 10">
+                <h3>Sorvecraft</h3>
+                <p>o sorvete que fez parte da infancia de todos da atual geração, reconhecido pelo seu formato geométrico </p>
+                <p>Preço: R$51,00</p>
+                <button onclick="addToOrder('Sorvecraft', 51)">adicionar ao carrinho</button>
+            </div>
+            <div class="menu-item" data-price="1">
+                <img src="https://tse1.mm.bing.net/th?id=OIG4.wrmlIgpUds0jep1SadUp&pid=ImgGn" alt="Lanche 11">
+                <h3>Nissin Impact</h3>
+                <p>Uma macarronada com um sistema especial, onde o primeiro pedido é de graça, mas os próximos
+                    são a custo de serviço braçal na lanchonete
+                </p>
+                <p>Preço: aleatório, voce tem chances de tirar um ótimo preço!</p>
+                <button onclick="lootboxvsf('Nissin Impact', 1)">adicionar ao carrinho</button>
+            </div>
+            <div class="menu-item" data-price="-50">
+                <img src="https://lh3.googleusercontent.com/gg/AJxt1KOomRHj_IS2ukiQroK4mUVZtDTUwrduw5YUGLVHHQrgowSHpS4qmkIYpJAsTliVnvfpXiLoaTvwCqYF3Jw7gH7dKKoirnse2naN1sFAj6ZQJwB7L9PoJ4HeESaB7jj19MDVzXADtkRVdFeDSO2vMjbD6SJJZYG1NCJRqhwvagETXhmRoJR3" alt="Lanche 12">
+                <h3>Bife of Legends</h3>
+                <p>o prato que possui origens e potenciais incíveis, porém ainda consegue ser
+                    o alimento mais insalubre testemunhado pelo ser humano, o prato é um desafio porposto pela loja.
+                </p>
+                <p>Preço: -R$50,00
+                    lhe pagaremos 50 reais caso consiga apreciar o prato
+                </p>
+                <button onclick="addToOrder('Bife of Legends', -50)">adicionar ao carrinho</button>
+            </div>
+           
+        </section>
+        <aside id="order-summary">
+            <h2>Resumo do Pedido</h2>
+            <p>Total: R$<span id="total-price">0</span></p>
+            <button onclick="finalizeOrder()">Realizar Pedido</button>
+        </aside>
+    </main>
+    <footer id="contact">
+        <p>Entre em contato conosco: +55 63 9111-6218</p>
+    </footer>
+    <script src="scripto.js"></script> 
+</body>
+</html>
